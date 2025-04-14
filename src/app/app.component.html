@@ -1,3 +1,75 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+<!-- neon-links.component.html -->
+<div class="relative w-full min-h-screen overflow-hidden bg-black text-white font-sans flex items-center justify-center">
+
+  <!-- 🔥 Vídeo de fundo -->
+  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="https://v1.pinimg.com/videos/mc/720p/7a/d0/0c/7ad00cb0b7eded41f297ec32d75e5d52.mp4" type="video/mp4" />
+  </video>
+
+  <!-- 🔲 Camada de vidro (linktree) -->
+  <div class="relative z-10 w-[90%] max-w-sm p-6 rounded-2xl border border-white/20 backdrop-blur-xl bg-white/10 shadow-lg">
+    
+    <!-- Logo + Nome -->
+    <div class="flex flex-col items-center">
+      <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-20 mb-4">
+        <defs>
+          <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#cf5fff" />
+          </filter>
+        </defs>
+        <g filter="url(#neon-glow)" stroke="#cf5fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M240.805 120.6C231.529 111.151 216.615 104.362 203.37 102.696C193.411 101.438 185.219 105.559 179.259 113.566C144.21 160.665 221.822 192.459 216.061 238.909C213.561 259.084 188.045 254.604 176.087 263.215C159.955 274.828 174.75 293.886 153.243 302.222"/>
+          <path d="M188.813 175.393C220.737 189.603 271.251 189.337 294.16 159.935"/>
+          <path d="M301.003 164.039C333.312 180.572 347.52 204.604 347.52 240.655"/>
+          <path d="M346.15 239.287C342.282 219.316 294.78 197.321 298.469 229.931"/>
+          <path d="M292.795 229.709C284.303 218.952 250.382 205.891 250.382 228.351"/>
+          <path d="M173.767 180.354C142.709 188.063 109.829 179.683 86.2053 159.935"/>
+          <path d="M82.0986 159.935C57.4341 165.398 46.804 214.87 54.427 236.551"/>
+          <path d="M154.61 222.173C126.719 203.397 127.032 225.092 116.375 230.358C109.634 233.689 102.849 221.5 95.3482 222.173C82.1457 223.357 72.4924 231.621 61.5765 237.919"/>
+          <path d="M219.374 97C217.837 102.366 221.52 103.087 224.283 106.577"/>
+        </g>
+      </svg>
+
+      <h1 class="text-4xl font-extrabold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#cf5fff] via-[#b13fff] to-[#ff77ff] drop-shadow-[0_0_6px_#cf5fff]">
+        HIKARUDEV
+      </h1>
+      
+    </div>
+
+    <br>
+    <!-- Botões Linktree -->
+    <div class="flex flex-col gap-4">
+      <a href="https://www.instagram.com/hikarudev/" target="_blank" class="flex items-center justify-center gap-3 border-2 rounded-xl py-3 text-lg transition text-[#cf5fff] border-[#cf5fff] hover:bg-[#cf5fff] hover:text-black">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://wa.me/5581984423591" target="_blank" class="flex items-center justify-center gap-3 border-2 rounded-xl py-3 text-lg transition text-[#00eaff] border-[#00eaff] hover:bg-[#00eaff] hover:text-black">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="#" target="_blank" class="flex items-center justify-center gap-3 border-2 rounded-xl py-3 text-lg transition text-[#cf5fff] border-[#cf5fff] hover:bg-[#cf5fff] hover:text-black">
+        <svg class="w-5 h-5" fill="#cf5fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#glow-pink)">
+            <path d="M1.293,11.293l4-4A1,1,0,1,1,6.707,8.707L3.414,12l3.293,3.293a1,1,0,1,1-1.414,1.414l-4-4A1,1,0,0,1,1.293,11.293Zm17.414-4a1,1,0,1,0-1.414,1.414L20.586,12l-3.293,3.293a1,1,0,1,0,1.414,1.414l4-4a1,1,0,0,0,0-1.414ZM13.039,4.726l-4,14a1,1,0,0,0,.686,1.236A1.053,1.053,0,0,0,10,20a1,1,0,0,0,.961-.726l4-14a1,1,0,1,0-1.922-.548Z"/>
+          </g>
+          <defs>
+            <filter id="glow-pink" x="-50%" y="-50%" width="200%" height="200%">
+              <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#cf5fff" />
+            </filter>
+          </defs>
+        </svg>
+        Modelos
+      </a>
+
+      <!-- Novo botão LinkedIn -->
+      <a href="https://www.linkedin.com/in/kau%C3%A3-rodrigo/" target="_blank"
+      class="flex items-center justify-center gap-3 border-2 rounded-xl py-3 text-lg transition text-[#00eaff] border-[#00eaff] hover:bg-[#00eaff] hover:text-black">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+
+    </div>
+
+    <!-- Rodapé -->
+    <p class="mt-8 text-xs text-gray-300 flex items-center justify-center gap-2">
+      <i class="fas fa-robot"></i> © HIKARUDEV - Todos os direitos reservados
+    </p>
+  </div>
+</div>
